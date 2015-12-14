@@ -1,0 +1,703 @@
+/*=== Fonts WebFonts ===*/
+@import "http://webfonts.ru/import/lato.css";
+@import "http://webfonts.ru/import/exotwo.css";
+@import "http://webfonts.ru/import/intro.css";
+
+@import "http://webfonts.ru/import/bender.css";
+@import "http://webfonts.ru/import/caviar.css";
+
+@import "http://webfonts.ru/import/baronneue.css";
+
+/*=============*/
+
+/*=== HTML-BODY ===*/
+html, body {
+	height: 100%;
+}
+body {
+	padding: 70px 0 0 0;
+	background: #eeeeee;
+}
+/*=================*/
+
+/*=== Typography ===*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 600;
+}
+
+h1 {}
+
+h2 {
+	font-family: 'Intro', sans-serif;
+}
+
+h3 {}
+
+h4 {}
+
+h5 {
+	font-family: 'Caviar Dreams', sans-serif;
+}
+
+h6 {
+	font-size: 11px;
+	color: #323232;
+}
+
+p {
+	color: #323232;
+	font-family: 'Lato', sans-serif;
+}
+
+a {
+	font-family: 'Lato', sans-serif;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+hr.row-news {
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+ol, ul {
+	margin-top: 0;
+    margin-bottom: 0px;
+}
+
+/*==================*/
+
+/*=== Default of page ===*/
+.container {
+  	max-width: 100%;
+}
+
+@media (min-width: 1px) {
+  	.navbar-toggle {
+    	display: block !important;
+  	}
+}
+@media (max-width: 992px) {
+	.navmenu {
+    	padding-top: 70px !important;
+  	}
+}
+@media (min-width: 992px) {
+  	body {
+    	padding: 0 0 0 220px;
+  	}
+  	.navbar {
+    	display: none !important; /* IE8 fix */
+  	}
+}
+
+.navmenu-default .navmenu-nav>.active>a, 
+.navbar-default .navbar-offcanvas .navmenu-nav>.active>a, 
+.navmenu-default .navmenu-nav>.active>a:hover, 
+.navbar-default .navbar-offcanvas .navmenu-nav>.active>a:hover, 
+.navmenu-default .navmenu-nav>.active>a:focus, 
+.navbar-default .navbar-offcanvas .navmenu-nav>.active>a:focus {
+	border-left: 3px solid #88c6ea;
+	color: #72b8ed;
+	padding: 5px 15px;
+    margin-left: 10px;
+    background-color: rgba(0,0,0,0);
+}
+
+.navmenu-default .navmenu-nav>li>a:hover, 
+.navbar-default .navbar-offcanvas .navmenu-nav>li>a:hover, 
+.navmenu-default .navmenu-nav>li>a:focus, 
+.navbar-default .navbar-offcanvas .navmenu-nav>li>a:focus {
+	display: block;
+	color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.navmenu-default, 
+.navbar-default .navbar-offcanvas { 
+	background-color: #fff;
+	border-color: rgba(0,0,0,0);
+}
+
+.nav>li>a {
+	font-family: 'Lato', sans-serif;
+	font-size: 11px;
+	font-weight: 700;
+	margin-left: 10px;
+	padding: 10px 10px;
+}
+
+.navmenu {
+    padding-top: 0px;
+}
+
+.navmenu-brand {
+	height: 220px;
+}
+
+.navmenu-brand h4 {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-family: 'Exo 2', sans-serif;
+	font-size: 20px;
+	color: #4c4c4c;
+	font-weight: 900;
+}
+
+.navbar {
+  	display: block;
+  	text-align: center;
+  	min-height: 70px;
+}
+
+.navbar-brand {
+  	display: inline-block;
+  	float: none;
+  	height: 64px;
+    padding: 5px 5px;
+}
+
+.navmenu, .navbar-offcanvas {
+	width: 220px;
+}
+
+.navbar-toggle {
+  	position: absolute;
+  	float: left;
+  	margin-left: 15px;
+}
+/*===================*/
+
+/*=== Факультеты ===*/
+.grid {
+	position: relative;
+	margin: 0 auto;
+	padding: 0em;
+	max-width: 1000px;
+	list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+	.grid figure {
+		height: 70px !important;
+	}
+	figure.effect-sadie h6 {
+		top: 0% !important;
+	}
+	.grid figure img {
+		opacity: 0.1 !important;
+	}
+}
+
+.grid figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 0px;
+	height: 250px;
+	width: 100%;
+	background: rgba(255, 255, 255, 1);
+	/*background: rgba(43, 118, 146, 0.74);*/
+	cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+	padding: 0em;
+	color: #fff;
+	text-transform: uppercase;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h6,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+figure.effect-sadie figcaption::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(50, 156, 201, .9) 0%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(50, 156, 201, .9) 0%);
+	content: '';
+	opacity: 0;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+}
+
+figure.effect-sadie h6 {
+	position: absolute;
+	padding: 1.3em;
+	font-family: 'Exo 2', sans-serif;
+	top: 65%;
+	left: 0;
+	width: 100%;
+	color: #323232;
+	-webkit-transition: -webkit-transform 0.35s, color 0.35s;
+	transition: transform 0.35s, color 0.35s;
+	/*-webkit-transform: translate3d(0,-70%,0);
+	transform: translate3d(0,-70%,0);*/
+}
+
+figure.effect-sadie figcaption::before,
+figure.effect-sadie p {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-sadie p {
+	position: absolute;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 300;
+	bottom: 1em;
+	left: 0;
+	padding: 2em;
+	width: 100%;
+	opacity: 0;
+	-webkit-transform: translate3d(0,10px,0);
+	transform: translate3d(0,10px,0);
+}
+
+figure.effect-sadie:hover h6 {
+	color: #fff;
+	-webkit-transform: translate3d(0,-0%,0) translate3d(0,-0px,0);
+	transform: translate3d(0,-0%,0) translate3d(0,-0px,0);
+}
+
+figure.effect-sadie:hover figcaption::before ,
+figure.effect-sadie:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+/*==================*/
+
+/*=== E.A. ===*/
+#mes {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,dadada+100&amp;0+58,0.65+100 */
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(126,126,126,0) 58%, rgba(218,218,218,0.65) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(126,126,126,0) 58%,rgba(218,218,218,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(126,126,126,0) 58%,rgba(218,218,218,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6dadada',GradientType=0 ); /* IE6-9 */
+	min-height: 390px;
+	padding: 30px 0px 10px;
+}
+
+.foto {
+	position: relative;
+	height: 27em;
+	margin: -10px -15px;
+}
+
+.foto img {
+	position: absolute;
+	display: inline-block;
+	max-width: 300px;
+	width: 100%;
+	bottom: 0%;
+	left: 0%;
+}
+
+@media screen and (max-width: 615px) {
+	.foto {
+		height: 100% !important;
+	}
+	.foto img {
+		position: relative !important;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	i.fa-quote-left {
+		color: rgba(110, 110, 110, 0.2) !important;
+		font-size: 300px !important;
+		position: absolute !important; 
+		right: 10% !important;
+	}
+}
+
+@media screen and (min-width: 1367px) and (max-width: 1920px) {
+	.text-ea {
+		width: 60% !important;
+	}
+}
+
+i.fa-quote-left {
+	color: #009EDA;
+	position: relative;
+	right: 30px;
+	font-size: 70px;
+}
+
+.text-ea {
+	padding-top: 0px;
+}
+
+.text-ea h3 {
+	margin: 0px;
+	padding: 20px 0px 20px 0px;
+	font-family: 'Caviar Dreams', sans-serif;
+	color: #4c4c4c;
+}
+
+.text-ea {
+	font-size: 13px;
+}
+
+.ete  p {
+	text-indent: 3em;
+	margin:5px 0px;
+}
+
+.fio {
+	border-left: 3px solid #009EDA;
+	margin-bottom: 30px;
+}
+
+.fio p {
+	padding-left: 20px;
+	font-style: italic;
+	font-size: 15px;
+	color: #009EDA;
+	margin-top: 25px;
+	text-indent: 0em;
+}
+
+/*=== NEWS ===*/
+#news {
+	margin: 30px 0px;
+}
+
+.ui-4{
+	margin-top:40px;
+}
+.ui-bor{
+	margin-bottom: 5px;
+}
+/* UI Border */
+.bg-white {
+  background-color: #fff;
+}
+@media (max-width:767px){
+	.ui-bor{
+		padding-left:15px;
+		padding-right:15px;
+	}
+}
+/* UI Item */
+.ui-item{
+	position:relative;
+	overflow:hidden;
+	border-radius: 4px;
+	min-height: 290px;
+    max-height: 400px;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+}
+.ui-item img {
+    max-width: none !important;
+    height: 100%;
+    position: absolute;
+    background-position: 50% 0%;
+}
+@media (max-width:767px) {
+	.ui-item{
+		max-width: 400px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+}
+/* UI Content */
+.ui-item .ui-content {
+	position:absolute;
+	top:0px;
+	width:100%;
+	height:100%;
+	padding: 20px;
+}
+/* Heading */
+.ui-item .ui-content h5 {
+	color:#fff;
+	line-height: 1;
+	font-size: 20px;
+	font-weight: 900;
+	margin-top: 30px;
+	ma
+}
+.ui-item .ui-content .data-n p {
+	font-size: 12px;
+	font-weight: 700;
+	color: #fff;
+	margin-bottom: 5px;
+}
+.ui-item .ui-content .data-n i {
+	color: #fff;
+	margin-right: 5px;
+	font-size: 15px;
+}
+
+@media (max-width:991px) and (min-width:391px) {
+	
+}
+/* UI Background */
+.ui-item .ui-bg-blue{
+	background: rgba(33, 71, 115, 0.7);
+}
+/* UI Content Hover */
+.ui-item .ui-content .ui-content-hover .data-n i {
+	color: #009EDA;
+	margin-right: 5px;
+} 
+.ui-item .ui-content .ui-content-hover .data-n p {
+	font-size: 11px;
+	color: #009EDA;
+	margin-bottom: 5px;
+}
+.ui-item .ui-content .ui-content-hover{
+	position:absolute;
+	display: inline-block;
+	top:100%;
+	left:0px;
+	width:100%;
+	height:100%;
+	text-align:left;
+	padding:20px;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.ui-item:hover .ui-content .ui-content-hover {
+	top:0px;
+}
+/* Heading */
+.ui-item  .ui-content .ui-content-hover h5 {
+	margin-top:5px;
+}
+@media (max-width:1200px) and (min-width:992px) {
+	.ui-item .ui-content .ui-content-hover h5 {	
+		margin-top:10px;
+	}
+}
+@media (max-width:312px){
+	.ui-item  .ui-content .ui-content-hover h5 {	
+		margin-top:16px;
+	}
+}
+.ui-item .ui-content .ui-content-hover h5 a {
+	font-family: 'Caviar Dreams', sans-serif;
+	text-decoration: underline;
+	color:#333;
+	width: 100%;
+	height: 100%;
+	z-index: 999;
+	font-size: 14px;
+	margin-bottom: 2px;
+}
+/* Paragraph */
+.ui-item .ui-content .ui-content-hover .ui-icon ul li.admin p {
+	color: #0083b6;
+}
+.ui-item .ui-content .ui-content-hover p {
+	font-size: 13px;
+	color: #333;
+	line-height: 1.2;
+}
+.ui-item .ui-content .ui-content-hover p i.ion-university {
+	font-size: 20px;
+	position: relative;
+	top: 4px;
+}
+/* UI Icon */
+.ui-item .ui-content .ui-content-hover .ui-icon {	
+	position:absolute;
+	bottom:20px;
+	width: 100%;
+	margin-top: 10px;
+	display: inline-block
+}
+.ui-item .ui-content .ui-content-hover .ui-icon a i {
+	color:#333;
+	font-size:24px;
+	font-weight:300;
+	margin-right: 40px;
+	padding: 0px 0px 0px 2px;;
+	width:28px;
+	height:28px;
+	border-radius:50%;
+	border:1px solid #333;
+	line-height:24px;
+	text-align:center;
+	transition: all 0.2s ease-in-out;
+}
+
+.ui-item .ui-content .ui-content-hover .ui-icon a i:hover {
+	color:#fff;
+	background: #009EDA;
+	font-size:24px;
+	font-weight:300;
+	width:28px;
+	height:28px;
+	border-radius:50px;
+	border:1px solid #fff;
+	line-height:24px;
+	text-align:center;
+}
+
+.bort {
+	padding-left: 50px;
+}
+
+.bort h2 {
+	border-left: 2px solid #4c4c4c;
+    padding: 4px 20px 0px;
+    margin-bottom: 30px;
+}
+.link-style{
+	margin-top: 30px;
+	margin-right: 10px;
+}
+.link-style a {
+	border-bottom: 1px dashed -webkit-link;
+	padding: 0;
+}
+/*===========*/
+
+/*=== ABS ===*/
+#abs {
+	margin: 30px 0px;
+}
+
+.abs {
+	background: #ffffff;
+	padding: 30px;
+	display: inline-block;
+	margin-bottom: 5px;
+	border-radius: 4px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.abs-data {
+	position: relative;
+    bottom: 4px;
+    right: 5px;
+}
+
+.abs h5 {
+	text-indent: 1.6em;
+	text-decoration: underline;
+	margin-top: 0px;
+}
+
+.abs .data-n p {
+	font-size: 12px;
+	color: #009EDA;
+}
+
+.ion-android-notifications-none {
+	font-size: 20px;
+}
+.ion-android-more-vertical {
+	font-size: 20px;
+}
+.abs .data-n i {
+	color: #009EDA;
+	position: relative;
+	bottom: 1px;
+}
+/*===========*/
+
+/*=== FOOTER ===*/
+#footer {
+	background: #3b3b3b;
+	margin-top: 20px;
+	color: #fff;
+	padding: 30px 20px 40px;
+}
+#footer h4 {
+	font-family: 'Exo 2', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
